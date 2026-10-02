@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Modern responsive e-commerce store">
+    <title>my shops</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+        <a href="index.html" class="logo">Shop<span>Ease</span></a>
+
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html">Cart  <span id="cartCount">0</span></a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Shop Quality Products Online</h1>
+        <p>Discover great products at affordable prices.</p>
+        <a href="shop.html" class="btn">Shop Now</a>
+    </div>
+</section>
+
+<section class="section">
+    <h2>Featured Products</h2>
+
+    <div class="product-grid">
+
+        <article class="product-card">
+            <img src="https://via.placeholder.com/500x500" alt="Smart Watch">
+            <h3>Smart Watch</h3>
+            <p class="price">₦45,000</p>
+            <button class="btn" onclick="addToCart('Smart Watch',45000)">
+                Add to Cart
+            </button>
+        </article>
+
+        <article class="product-card">
+            <img src="https://via.placeholder.com/500x500" alt="Wireless Headphones">
+            <h3>Wireless Headphones</h3>
+            <p class="price">₦35,000</p>
+            <button class="btn" onclick="addToCart('Wireless Headphones',35000)">
+                Add to Cart
+            </button>
+        </article>
+
+        <article class="product-card">
+            <img src="https://via.placeholder.com/500x500" alt="Laptop Bag">
+            <h3>Laptop Bag</h3>
+            <p class="price">₦25,000</p>
+            <button class="btn" onclick="addToCart('Laptop Bag',25000)">
+                Add to Cart
+            </button>
+        </article>
+
+    </div>
+</section>
+
+<section class="features">
+    <div>
+        <h3>🚚 Fast Delivery</h3>
+        <p>Reliable delivery to your doorstep.</p>
+    </div>
+
+    <div>
+        <h3>🔒 Secure Payment</h3>
+        <p>Your payment information is protected.</p>
+    </div>
+
+    <div>
+        <h3>⭐ Quality Products</h3>
+        <p>Carefully selected products.</p>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 ShopEase. All Rights Reserved.</p>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

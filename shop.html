@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase | Shop</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+        <a href="index.html" class="logo">Shop<span>Ease</span></a>
+
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html">Cart <span id="cartCount">0</span></a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+<section class="section">
+    <h1>Our Products</h1>
+
+    <div class="product-grid">
+
+        <article class="product-card">
+            <img src="https://via.placeholder.com/500x500" alt="Smart Watch">
+            <h3>Smart Watch</h3>
+            <p class="price">₦45,000</p>
+            <button class="btn"
+                onclick="addToCart('Smart Watch',45000)">
+                Add to Cart
+            </button>
+        </article>
+
+        <article class="product-card">
+            <img src="https://via.placeholder.com/500x500" alt="Headphones">
+            <h3>Wireless Headphones</h3>
+            <p class="price">₦35,000</p>
+            <button class="btn"
+                onclick="addToCart('Wireless Headphones',35000)">
+                Add to Cart
+            </button>
+        </article>
+
+        <article class="product-card">
+            <img src="https://via.placeholder.com/500x500" alt="Laptop Bag">
+            <h3>Laptop Bag</h3>
+            <p class="price">₦25,000</p>
+            <button class="btn"
+                onclick="addToCart('Laptop Bag',25000)">
+                Add to Cart
+            </button>
+        </article>
+
+        <article class="product-card">
+            <img src="https://via.placeholder.com/500x500" alt="Sneakers">
+            <h3>Classic Sneakers</h3>
+            <p class="price">₦55,000</p>
+            <button class="btn"
+                onclick="addToCart('Classic Sneakers',55000)">
+                Add to Cart
+            </button>
+        </article>
+
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 ShopEase. All Rights Reserved.</p>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

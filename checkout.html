@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopEase | Checkout</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            Shop<span>Ease</span>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="cart.html">Cart 🛒</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="checkout-container">
+
+<div class="checkout-form">
+
+<h1>Checkout</h1>
+
+<form id="checkoutForm">
+
+<label>Full Name</label>
+<input type="text" name="name" required>
+
+<label>Email Address</label>
+<input type="email" name="email" required>
+
+<label>Phone Number</label>
+<input type="tel" name="phone" required>
+
+<label>Delivery Address</label>
+<textarea name="address" rows="5" required></textarea>
+
+<label>City</label>
+<input type="text" name="city" required>
+
+<label>Payment Method</label>
+
+<select name="payment" required>
+    <option value="">Select Payment Method</option>
+    <option value="card">Debit/Credit Card</option>
+    <option value="transfer">Bank Transfer</option>
+    <option value="pickup">Pay on Pickup</option>
+</select>
+
+<button type="submit" class="btn">
+    Place Order
+</button>
+
+</form>
+
+</div>
+
+<aside class="order-summary">
+
+<h2>Order Summary</h2>
+
+<div id="checkoutItems"></div>
+
+<hr>
+
+<h3>
+    Total:
+    <span id="checkoutTotal">₦0</span>
+</h3>
+
+</aside>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 ShopEase. All Rights Reserved.</p>
+</footer>
+
+<script src="js/app.js"></script>
+
+<script>
+    displayCheckout();
+
+    document.getElementById("checkoutForm").addEventListener("submit", function(e) {
+
+        e.preventDefault();
+
+        alert("Order received successfully!");
+
+        localStorage.removeItem("cart");
+
+        window.location.href = "index.html";
+
+    });
+</script>
+
+</body>
+</html>
